@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  backend:
+    image: quay.io/quarkus/ubi-quarkus-native-image:22.3-java17
+    container_name: portailia-backend
+    working_dir: /workspace
+    volumes:
+      - ./backend:/workspace
+    command: bash -lc "./mvnw quarkus:dev -Dquarkus.http.host=0.0.0.0"
+    ports:
+      - "8080:8080"
+    environment:
+      QUARKUS_HTTP_HOST: 0.0.0.0
+      QUARKUS_PROFILE: dev
+    networks:
+      - portailia-net
+
+  frontend:
+    image: node:20-alpine
+    container_name: portailia-frontend
+    working_dir: /app
+    volumes:
+      - ./front:/app
+    command: sh -lc "npm install && npm run dev -- --host 0.0.0.0 --port 5173"
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://localhost:8080
+    networks:
+      - portailia-net
+
+networks:
+  portailia-net:
+    driver: bridge

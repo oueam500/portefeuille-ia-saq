@@ -1,0 +1,36 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node / Vue
+front/node_modules/
+front/dist/
+front/.vite/
+front/.env
+front/.env.*
+
+# Java / Quarkus
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.idea/
+backend/.gradle/
+backend/*.log
+backend/.env
+backend/.env.*
+
+# Docker
+*.local
+
+docker-compose.override.yml
+
+# Git
+*.orig
+
+# Misc
+coverage/
+.tmp/

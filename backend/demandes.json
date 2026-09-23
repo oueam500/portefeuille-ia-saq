@@ -1,0 +1,57 @@
+[
+{
+  "id": 1,
+  "titre": "Assistant RH",
+  "demandeur": "Amal Ouedraogo",
+  "direction": "Ressources humaines",
+  "scoreGlobal": 78.0,
+  "categorie": "Agent avancé",
+  "priorite": "Haute",
+  "statut": "En analyse"
+}
+,
+{
+  "id": 2,
+  "titre": "Prévisions des ventes",
+  "demandeur": "Jean Tremblay",
+  "direction": "Ventes",
+  "scoreGlobal": 94.0,
+  "categorie": "Projet stratégique IA",
+  "priorite": "Critique",
+  "statut": "Comité IA"
+}
+,
+{
+  "id": 3,
+  "titre": "FAQ RH",
+  "demandeur": "Julie Gagnon",
+  "direction": "Ressources humaines",
+  "scoreGlobal": 68.0,
+  "categorie": "Agent simple",
+  "priorite": "Moyenne",
+  "statut": "Backlog"
+}
+,
+{
+  "id": 4,
+  "titre": "Résumé de réunions",
+  "demandeur": "Marc Bouchard",
+  "direction": "TI",
+  "scoreGlobal": 82.0,
+  "categorie": "Agent avancé",
+  "priorite": "Haute",
+  "statut": "Approuvé"
+}
+,
+{
+  "id": 5,
+  "titre": "Assistant gestionnaire",
+  "demandeur": "Sophie Roy",
+  "direction": "Opérations",
+  "scoreGlobal": 88.0,
+  "categorie": "Agent avancé",
+  "priorite": "Haute",
+  "statut": "Développement"
+}
+
+]
